@@ -1,0 +1,300 @@
+body {
+  background-color: rgba(221, 217, 217, 0.863);
+  font-family: Poppins, sans-serif;
+  height: 100vh;
+}
+
+.card-img {
+  height: 80px;
+  width: 80px;
+}
+
+.dropdown-btn {
+  width: 100px;
+}
+
+.dropdown-content {
+  min-width: auto;
+}
+
+.main-content {
+  -webkit-box-shadow: -2px 0px 10px -3px rgba(0, 0, 0, 0.76);
+  box-shadow: -2px 0px 10px -3px rgba(0, 0, 0, 0.76);
+}
+
+.page-number,
+.prev-btn,
+.next-btn {
+  height: 40px;
+  width: 40px;
+  box-shadow: -2px 0px 10px -3px rgba(92, 86, 71, 0.76);
+}
+
+.progress-bar {
+  border-radius: 7px;
+  width: 100%;
+  height: 8px;
+}
+
+.progress-bar::-webkit-progress-bar {
+  background-color: rgb(248, 226, 186);
+  border-radius: 7px;
+}
+
+.progress-bar::-webkit-progress-value {
+  background-color: rgb(247, 175, 43);
+  border-radius: 7px;
+}
+
+.particular-user-name {
+  display: block;
+  position: relative;
+}
+
+.particular-user-name::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50rem;
+  margin-left: 4px;
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+.active-user::after {
+  background-color: green;
+}
+
+.inactive-user::after {
+  background-color: red;
+}
+
+#root {
+  height: 100vh;
+}
+
+.small-modal {
+  width: 50%;
+  left: 25%;
+}
+
+.user-click-details {
+  font-size: small;
+}
+
+.user-details-card {
+  height: 400px;
+  width: 280px;
+  -webkit-box-shadow: 0px 0px 22px -2px rgba(201, 199, 199, 0.7);
+  box-shadow: 0px 0px 22px -2px rgb(201, 199, 199);
+  border: none;
+  border-radius: 30px;
+}
+
+.user-email {
+  font-size: smaller;
+}
+
+.user-info {
+  width: 100%;
+}
+
+.user-list-table {
+  width: 70%;
+}
+
+.skeleton-avatar {
+  width: 45px;
+  height: 45px;
+}
+
+.skeleton-name {
+  width: 170px;
+  height: 15px;
+}
+
+.skeleton-email {
+  width: 200px;
+  height: 15px;
+}
+
+.skeleton-status {
+  width: 110px;
+  height: 30px;
+}
+
+.skeleton-role {
+  width: 110px;
+  height: 30px;
+}
+
+.skeleton-removable {
+  width: 30px;
+  height: 30px;
+}
+
+.modal-content {
+  background: none;
+  border: none;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  html {
+    font-size: x-small;
+  }
+
+  .user-details-card {
+    height: 290px;
+    width: 160px;
+  }
+
+  .user-avatar,
+  .skeleton-avatar {
+    height: 27px;
+    width: 27px;
+  }
+
+  .user-click-details {
+    font-size: smaller;
+  }
+
+  .page-number,
+  .prev-btn,
+  .next-btn {
+    height: 25px;
+    width: 25px;
+  }
+
+  .skeleton-name {
+    height: 11px;
+    width: 120px;
+  }
+
+  .skeleton-email {
+    height: 10px;
+    width: 160px;
+  }
+
+  .skeleton-status,
+  .skeleton-role {
+    width: 75px;
+    height: 16px;
+  }
+
+  .skeleton-removable {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-details-card {
+    height: 260px;
+    width: 170px;
+  }
+
+  .card-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .skeleton-name {
+    height: 12px;
+    width: 100px;
+  }
+
+  .skeleton-email {
+    height: 10px;
+    width: 130px;
+  }
+
+  .skeleton-status,
+  .skeleton-role {
+    width: 60px;
+    height: 15px;
+  }
+
+  .skeleton-removable {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .user-avatar,
+  .skeleton-avatar {
+    height: 23px;
+    width: 23px;
+  }
+
+  .user-click-details {
+    font-size: smaller;
+  }
+
+  .user-list-table {
+    width: 100%;
+  }
+
+  .particular-user-name::after {
+    width: 4px;
+    height: 4px;
+  }
+  .page-number,
+  .prev-btn,
+  .next-btn {
+    height: 20px;
+    width: 20px;
+  }
+
+  .skeleton-name {
+    height: 10px;
+    width: 80px;
+  }
+
+  .skeleton-email {
+    height: 8px;
+    width: 100px;
+  }
+
+  .skeleton-status,
+  .skeleton-role {
+    width: 40px;
+    height: 15px;
+  }
+
+  .skeleton-removable {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: x-small;
+  }
+}
